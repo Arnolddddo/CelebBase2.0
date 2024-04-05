@@ -1,0 +1,17 @@
+CREATE TABLE Celebrity (
+  celebrity_id INTEGER PRIMARY KEY,
+  celebrity_name VARCHAR(100),
+  celebrity_age Varchar(100),
+  celebrity_gender VARCHAR(100),
+  celebrity_nationality VARCHAR(100)
+  );
+INSERT INTO Celebrity(celebrity_name, celebrity_age,celebrity_gender,celebrity_nationality)
+VALUES
+('Tom Hanks', 63, 'Male', 'American'),
+('Tom Holland', 24, 'Male', 'English'),
+('Scarlett Johansson', 35, 'Female', 'American'),
+('Robert Downey Jr', 56, 'Male', 'American'),
+('Dwayne Johnson', 48, 'Male', 'American');
+
+SELECT * FROM Celebrity
+WHERE celebrity_age < 50;
